@@ -1,0 +1,82 @@
+whoami - user name
+git config --global user.email/name - set a name and email that is identifiable for credit when review version history
+pwd - current directory
+ls - list of files 
+ls -1 - list with date
+mkdir (git_demo) make directory
+cd - change directory
+git init - initialize an existing directory as a Git repository/save the history of project
+ls -a - show all hidden files 
+git add . - put all the files in staging/add a file as it looks now to your next commit (stage) 
+git add file name - put particular file in staging
+git status - show modified files in working directory, staged for your next commit
+git reset [file] - unstage a file while retaining the changes in working directory
+vi file name - inside the file
+ESC :wq exit vim
+cat file name - displays inside the file 
+git restore --staged file name
+
+****CREATE AND MODIFY FILE
+///////////////////////////
+mkdir name
+cd name
+git init
+touch name
+git add .
+git commit -m "name added"
+vi name
+git add . again
+git commit -m "if modified" 
+////////////////////////////////
+
+
+
+ 
+touch [file name] = create a file 
+cd [file name] = open a repo
+rm -rf [file name] = remove the file 
+git add. [file name] = add the file
+git add. = add 
+git commit -m "comment" = add comment
+git log = history 
+git status 
+git vi [file name] = vim inside the file 
+Esc then shift + zx exit vim 
+ctrl + L = clear
+cat file name // Display the inside files 
+
+ADDING GITHUB REPOSITORY
+**git remote origin url(put the git repo url) 
+
+remote - working with urls
+add - adding a url
+origin - what is the name or the url
+ 
+**git remote -v
+  show all the urls attached to the folder
+
+**git push origin master
+<<<<NEVER COMMIT ON MASTER BRANCH>>  
+FORK REPOSITORY(clone because we cannot directly make changes to others main file)
+after fork
+**git clone url //copy of the folder/retrieve an entire repository from a hosted location via URL
+
+**git remote add upstream url // from where u have fork it
+
+PULL REQUEST------
+***change main to own branch*** 
+create a new branch
+**git branch name // all the commits now got to (name) branch
+
+**git checkout // check
+MERGING THE BRANCH------
+<<One pull request Means one Branch>>
+**git push origin name -- name here in not main branch //adding new file
+
+To remove file or unstage copy the commit below it (git log)
+Then- git add . 
+      git stash -- go back to the stash area
+
+force push
+**git push origin name -f
+
